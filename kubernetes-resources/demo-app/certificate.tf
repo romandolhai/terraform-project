@@ -1,3 +1,5 @@
+# Manifest that creates certificate based on deployed ClusterIssuer
+
 resource "kubernetes_manifest" "certificate_example_app" {
   manifest = {
     "apiVersion" = "cert-manager.io/v1"
