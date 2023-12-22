@@ -1,3 +1,5 @@
+# Manifest for kubernetes deployment
+
 resource "kubernetes_manifest" "deployment_example_deploy" {
   manifest = {
     "apiVersion" = "apps/v1"

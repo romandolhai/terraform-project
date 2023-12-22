@@ -1,3 +1,5 @@
+# Manifest that deploys ClusterIssuer required for letsencrypt
+
 resource "kubernetes_manifest" "clusterissuer_letsencrypt_cluster_issuer" {
   manifest = {
     "apiVersion" = "cert-manager.io/v1"

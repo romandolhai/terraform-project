@@ -1,3 +1,5 @@
+# Manifest to expose app as a service
+
 resource "kubernetes_manifest" "service_example_service" {
   manifest = {
     "apiVersion" = "v1"

@@ -1,3 +1,5 @@
+# Manifest that apply ingress rule for app
+
 resource "kubernetes_manifest" "ingress_example_app" {
   manifest = {
     "apiVersion" = "networking.k8s.io/v1"
