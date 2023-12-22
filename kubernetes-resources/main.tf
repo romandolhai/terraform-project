@@ -33,6 +33,8 @@ provider "kubernetes" {
   }
 }
 
+# Create namespaces required for cert-manager and nginx ingress
+
 resource "kubernetes_namespace" "cert-manager" {
   metadata {
     name = "cert-manager"
