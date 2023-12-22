@@ -10,6 +10,8 @@ provider "helm" {
   }
 }
 
+# Deploy nginx ingress with helm chart
+
 resource "helm_release" "ingress-nginx" {
   name       = "ingress-nginx"
   repository = "https://kubernetes.github.io/ingress-nginx"
